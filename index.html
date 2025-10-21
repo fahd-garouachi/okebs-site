@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>O'Kebs — Kebab, Burgers, Tacos à Annecy</title>
+  <meta name="description" content="O'Kebs Annecy — kebab généreux, burgers, tacos, tex-mex. Sur place, à emporter. Commande par téléphone.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- IMPORTANT: même dossier, même nom -->
+  <link rel="stylesheet" href="./styles.css?v=1" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="#accueil" aria-label="Accueil O'Kebs">
+        <!-- Logo Google Drive (affichage direct) -->
+        <img
+          src="https://drive.google.com/uc?export=view&id=1S3r6IW9HMN5q3BpBcV2T8TQqoieiDMrQ"
+          alt="Logo O'Kebs"
+          onerror="this.src='images/logo.png';"
+          width="56" height="56"
+        />
+        <div class="brand-text">
+          <strong>O'Kebs</strong>
+          <span>Annecy</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Ouvrir le menu">☰</button>
+        <div id="navLinks" class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#galerie">Photos</a>
+          <a href="#horaires">Horaires</a>
+          <a href="#infos">Contact</a>
+          <a class="btn call" href="tel:+33950811919">Appeler</a>
+          <a class="btn primary" href="tel:+33950811919">Commander</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="accueil" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <h1><span>Le Kebab</span> qui donne faim</h1>
+        <p>Viandes marinées, pain croustillant, sauces maison. Sur place ou à emporter – on s’occupe du reste.</p>
+        <div class="hero-ctas">
+          <a class="btn primary big" href="tel:+33950811919">Commander maintenant</a>
+          <a class="btn ghost big" href="#menu">Voir le menu</a>
+        </div>
+        <ul class="badges">
+          <li>Terrasse</li>
+          <li>Prix 10–20 €</li>
+          <li>À emporter</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="promo">
+          <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?q=80&w=1200&auto=format&fit=crop" alt="Assiette kebab appétissante" />
+          <div class="promo-tag">Fait maison</div>
+        </div>
+      </div>
+    </div>
+    <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32L48,48C96,64,192,96,288,96C384,96,480,64,576,48C672,32,768,32,864,42.7C960,53,1056,75,1152,80C1248,85,1344,75,1392,69.3L1440,64L1440,0L0,0Z"></path></svg>
+  </section>
+
+  <!-- Points forts -->
+  <section class="highlights">
+    <div class="container grid-3">
+      <div class="h-card">
+        <img src="https://images.unsplash.com/photo-1604908554261-4e5f1b9f2d77?q=80&w=800&auto=format&fit=crop" alt="Viandes marinées">
+        <h3>Viandes marinées</h3>
+        <p>Goût riche & cuisson parfaite, chaque jour.</p>
+      </div>
+      <div class="h-card">
+        <img src="https://images.unsplash.com/photo-1617191518000-2e7a9e7f1a87?q=80&w=800&auto=format&fit=crop" alt="Sauces maison">
+        <h3>Sauces maison</h3>
+        <p>Blanche, algérienne, samouraï… généreuses et onctueuses.</p>
+      </div>
+      <div class="h-card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="Frites croustillantes">
+        <h3>Frites croustillantes</h3>
+        <p>Dorées à souhait, servies bien chaudes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <main id="menu" class="container section">
+    <div class="section-head">
+      <h2 class="section-title">Menu</h2>
+      <div class="filters" role="tablist" aria-label="Catégories du menu">
+        <button class="chip active" data-filter="all" role="tab" aria-selected="true">Tout</button>
+        <button class="chip" data-filter="sandwichs" role="tab">Sandwichs</button>
+        <button class="chip" data-filter="hamburgers" role="tab">Burgers</button>
+        <button class="chip" data-filter="tacos" role="tab">Tacos</button>
+        <button class="chip" data-filter="assiettes" role="tab">Assiettes</button>
+        <button class="chip" data-filter="texmex" role="tab">Tex-Mex</button>
+        <button class="chip" data-filter="boissons" role="tab">Boissons & Desserts</button>
+      </div>
+    </div>
+
+    <div class="cards">
+      <article class="card menu-card hot" data-cat="sandwichs">
+        <h3>Sandwichs <span class="muted">(pain ou galette)</span></h3>
+        <ul class="price-list">
+          <li><span>Kebab veau</span><span class="dots"></span><span class="price">Seul 10.00€ · Menu 13.00€</span></li>
+          <li><span>Kebab poulet</span><span class="dots"></span><span class="price">Seul 8.00€ · Menu 11.50€</span></li>
+          <li><span>Escalope de poulet</span><span class="dots"></span><span class="price">Seul 10.00€ · Menu 13.00€</span></li>
+          <li><span>Adana</span><span class="dots"></span><span class="price">Seul 8.00€ · Menu 11.50€</span></li>
+          <li><span>Suçuk</span><span class="dots"></span><span class="price">Seul 8.00€ · Menu 11.50€</span></li>
+          <li><span>Köfte</span><span class="dots"></span><span class="price">Seul 8.00€ · Menu 11.50€</span></li>
+          <li><span>Falafel</span><span class="dots"></span><span class="price">Seul 8.00€ · Menu 11.50€</span></li>
+          <li><span>Américain</span><span class="dots"></span><span class="price">Seul 8.00€ · Menu 11.50€</span></li>
+        </ul>
+        <p class="note">Supplément viandes : +3,00€</p>
+      </article>
+
+      <article class="card menu-card" data-cat="hamburgers">
+        <h3>Burgers</h3>
+        <ul class="price-list">
+          <li><span>Cheeseburger</span><span class="dots"></span><span class="price">6.50€</span></li>
+          <li><span>Chickenburger</span><span class="dots"></span><span class="price">6.50€</span></li>
+          <li><span>Fishburger</span><span class="dots"></span><span class="price">6.50€</span></li>
+          <li><span>Kefta Burger</span><span class="dots"></span><span class="price">6.50€</span></li>
+        </ul>
+      </article>
+
+      <article class="card menu-card" data-cat="tacos">
+        <h3>Tacos</h3>
+        <ul class="price-list">
+          <li><span>Tacos L</span><span class="dots"></span><span class="price">Seul 10.00€ · Menu 13.00€</span></li>
+          <li><span>Tacos XXL</span><span class="dots"></span><span class="price">Seul 13.00€ · Menu 16.50€</span></li>
+        </ul>
+        <p class="note">Viandes au choix (kebab veau, kefta, escalope, suçuk, köfte…).</p>
+      </article>
+
+      <article class="card menu-card" data-cat="assiettes">
+        <h3>Assiettes & Brochettes</h3>
+        <ul class="price-list">
+          <li><span>Assiette kebab veau</span><span class="dots"></span><span class="price">14.50€</span></li>
+          <li><span>Assiette falafel</span><span class="dots"></span><span class="price">14.50€</span></li>
+          <li><span>Brochette poulet</span><span class="dots"></span><span class="price">16.50€</span></li>
+          <li><span>Brochette veau</span><span class="dots"></span><span class="price">16.50€</span></li>
+          <li><span>Brochette mixte</span><span class="dots"></span><span class="price">19.00€</span></li>
+          <li><span>Brochette Adana</span><span class="dots"></span><span class="price">14.50€</span></li>
+          <li><span>Ass. köfte</span><span class="dots"></span><span class="price">14.50€</span></li>
+        </ul>
+        <p class="note">Supplément viandes : +3,00€</p>
+      </article>
+
+      <article class="card menu-card" data-cat="texmex">
+        <h3>Tex-Mex</h3>
+        <ul class="price-list">
+          <li><span>Nuggets</span><span class="dots"></span><span class="price">x3 3.00€ · x6 5.50€ · x9 8.00€</span></li>
+          <li><span>Mozzastick</span><span class="dots"></span><span class="price">x3 3.00€ · x6 5.50€ · x9 8.00€</span></li>
+          <li><span>Tenders</span><span class="dots"></span><span class="price">x3 4.50€ · x6 8.00€ · x9 12.00€</span></li>
+          <li><span>Cordon bleu</span><span class="dots"></span><span class="price">—</span></li>
+        </ul>
+      </article>
+
+      <article class="card menu-card" data-cat="boissons">
+        <h3>Boissons & Desserts</h3>
+        <div class="cols-2">
+          <ul class="price-list">
+            <li><span>Canette 33cl</span><span class="dots"></span><span class="price">2,00€</span></li>
+            <li><span>Jus de fruit</span><span class="dots"></span><span class="price">2,20€</span></li>
+            <li><span>Bouteille 50cl</span><span class="dots"></span><span class="price">2,50€</span></li>
+            <li><span>Red Bull</span><span class="dots"></span><span class="price">3,50€</span></li>
+            <li><span>Bouteille d’eau</span><span class="dots"></span><span class="price">4,00€</span></li>
+            <li><span>Bouteille 1,5L</span><span class="dots"></span><span class="price">3,50€</span></li>
+            <li><span>Sirop</span><span class="dots"></span><span class="price">2,00€</span></li>
+            <li><span>Capri Sun</span><span class="dots"></span><span class="price">1,50€</span></li>
+          </ul>
+          <ul class="price-list">
+            <li><span>Café</span><span class="dots"></span><span class="price">1,50€</span></li>
+            <li><span>Café crème</span><span class="dots"></span><span class="price">1,60€</span></li>
+            <li><span>Café allongé</span><span class="dots"></span><span class="price">1,80€</span></li>
+            <li><span>Tiramisu</span><span class="dots"></span><span class="price">4,00€</span></li>
+            <li><span>Tarte Daim</span><span class="dots"></span><span class="price">4,00€</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Galerie -->
+  <section id="galerie" class="gallery section">
+    <div class="container">
+      <h2 class="section-title">Photos gourmandes</h2>
+      <div class="grid-3">
+        <img src="https://images.unsplash.com/photo-1619090960814-c3a9d1d4d7c7?q=80&w=1200&auto=format&fit=crop" alt="Kebab garni">
+        <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?q=80&w=1200&auto=format&fit=crop" alt="Assiette kebab">
+        <img src="https://images.unsplash.com/photo-1613564834361-20f8e6ed1d66?q=80&w=1200&auto=format&fit=crop" alt="Burger fromage">
+      </div>
+      <p class="muted center">Tu peux remplacer ces images par tes photos dans <code>images/</code>.</p>
+    </div>
+  </section>
+
+  <!-- Horaires -->
+  <section id="horaires" class="section alt">
+    <div class="container">
+      <h2 class="section-title">Horaires</h2>
+      <table class="hours">
+        <tbody>
+          <tr><th>Mardi</th><td>10:30–23:00</td></tr>
+          <tr><th>Mercredi</th><td>10:30–23:00</td></tr>
+          <tr><th>Jeudi</th><td>10:30–23:00</td></tr>
+          <tr><th>Vendredi</th><td>10:30–23:00</td></tr>
+          <tr><th>Samedi</th><td>10:30–23:00</td></tr>
+          <tr><th>Dimanche</th><td>Fermé</td></tr>
+          <tr><th>Lundi</th><td>10:30–23:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Infos & Contact -->
+  <section id="infos" class="section">
+    <div class="container info-grid">
+      <div class="info-card">
+        <h3>Contact</h3>
+        <ul class="info-list">
+          <li><strong>Adresse :</strong> 9 bis Av. de la République, 74960 Annecy</li>
+          <li><strong>Téléphone :</strong> <a href="tel:+33950811919">09 50 81 19 19</a></li>
+          <li><strong>Services :</strong> Terrasse, à emporter</li>
+          <li><strong>Prix par personne :</strong> 10–20 €</li>
+          <li><strong>Paiements :</strong> Pluxee</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn primary" href="tel:+33950811919">Commander par téléphone</a>
+          <a class="btn ghost"
+             href="https://www.google.com/maps/search/?api=1&query=O%27Kebs%2C%209%20bis%20Av.%20de%20la%20R%C3%A9publique%2C%2074960%20Annecy"
+             target="_blank" rel="noopener">Itinéraire</a>
+        </div>
+      </div>
+      <div class="map-card">
+        <iframe title="Carte O'Kebs Annecy" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=9%20bis%20Av.%20de%20la%20R%C3%A9publique%2C%2074960%20Annecy&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img
+          src="https://drive.google.com/uc?export=view&id=1S3r6IW9HMN5q3BpBcV2T8TQqoieiDMrQ"
+          alt="Logo O'Kebs"
+          onerror="this.src='images/logo.png';"
+          width="40" height="40"
+        />
+        <div>
+          <strong>O'Kebs</strong><br />
+          <span>Annecy</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="#menu">Menu</a>
+        <a href="#galerie">Photos</a>
+        <a href="#infos">Contact</a>
+      </div>
+      <div class="footer-actions">
+        <a class="btn call" href="tel:+33950811919">Appeler</a>
+        <a class="btn ghost" href="mailto:contact@okebs.example">Email</a>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> O'Kebs — Tous droits réservés</p>
+  </footer>
+
+  <!-- IMPORTANT: même dossier, même nom -->
+  <script src="./script.js?v=1"></script>
+</body>
+</html>
